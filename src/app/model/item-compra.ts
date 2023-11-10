@@ -1,15 +1,15 @@
 export class ItemCompra {
 
     id: number | null;
-    descricao: string;
-    quantidade: number;
+    descricao: string | null;
+    quantidade: number | null;
     precoUnitario: number | null;
     compraRealizada: boolean;
 
-    constructor (descricao: string, quantidade: number) {
+    constructor () {
         this.id = null;
-        this.descricao = descricao;
-        this.quantidade = quantidade;
+        this.descricao = null;
+        this.quantidade = null;
         this.precoUnitario = null;
         this.compraRealizada = false;
     }
