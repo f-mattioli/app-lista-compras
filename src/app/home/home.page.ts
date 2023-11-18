@@ -5,6 +5,8 @@ import { IonHeader, IonToolbar, IonTitle, IonContent,
 import { ItemCompra } from '../model/item-compra';
 import { NgFor, NgIf } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { checkmarkOutline, closeOutline } from 'ionicons/icons';
+import { addIcons } from 'ionicons';
 
 @Component({
   selector: 'app-home',
@@ -22,7 +24,9 @@ export class HomePage {
 
   novoItem: ItemCompra = new ItemCompra();
 
-  constructor() {}
+  constructor() {
+    addIcons({ checkmarkOutline, closeOutline });
+  }
 
   cadastrar() {
     this.lista.push(this.novoItem);
