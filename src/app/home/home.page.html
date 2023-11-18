@@ -47,12 +47,20 @@
     <ng-template #thenBlock>
       <ion-grid *ngFor="let i of lista">
         <ion-row>
-          <ion-col size=5>
+          <ion-col size=2>
             <span>{{i.descricao}}</span>
           </ion-col>
           <ion-col size=4>
             <span>{{i.quantidade}}</span>
           </ion-col>
+          <ion-col size=2>
+            
+            <ion-input label="Preço unitario:" 
+              type="number"
+              name="preço unitario"
+              [(ngModel)]="novoItem.precoUnitario"></ion-input>
+          
+        </ion-col>
           <ion-col size=2>
             <ion-button (click)="toggleConcluido(i)">
               {{ i.compraRealizada ? 'o' : 'x'}}
