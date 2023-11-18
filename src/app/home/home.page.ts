@@ -33,4 +33,13 @@ export class HomePage {
     i.compraRealizada = !i.compraRealizada;
   }
 
+  deletar(i :ItemCompra){
+    for(var x = 0 ; x<this.lista.length; x++){
+     if (this.lista[x].id == i.id){
+       this.lista.splice(x,1);
+       break;
+     }
+    }
+  }
+
 }
