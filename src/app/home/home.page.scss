@@ -25,3 +25,54 @@
 #container a {
   text-decoration: none;
 }
+
+
+
+.primeiro{
+  margin-top: 10%;
+  margin-left: 10%;
+  width:80%
+}
+
+.center{
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  border-radius: 5px;
+  box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+  padding: 30px;
+  margin: 20px;
+  width: 80%;
+  display: inline;
+
+  background-image: linear-gradient(178deg,rgb(70, 70, 70),transparent);
+ 
+}
+.color{
+  color:black;
+  background-color:white;
+  padding: 10px 2px ;
+}
+.alinhamento{
+  margin-top: 1%;
+  width:30%;
+  
+}
+.espaco>span{
+margin-left: 2px;
+}
+
+.divisao{
+  border: #8c8c8c solid 1px;
+  margin-top: 5px;
+}
+.color2{
+  color:black;
+  background-color:white;
+  padding: 10px 2px;
+  text-align: left;
+  margin-left: 2%;;
+}
+
